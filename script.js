@@ -23,7 +23,6 @@ addBtn.addEventListener("click", function (e) {
     localStorage.setItem("notes", JSON.stringify(notesObj));
     addTxt.value = "";
     addTitle.value = "";
-    //   console.log(notesObj);
     showNotes();
 });
 
@@ -57,7 +56,7 @@ function showNotes() {
 
 // Function to delete a note
 function deleteNote(index) {
-    //   console.log("I am deleting", index);
+
     let confirmDel = confirm("Delete this note?");
     if (confirmDel == true) {
         let notes = localStorage.getItem("notes");
